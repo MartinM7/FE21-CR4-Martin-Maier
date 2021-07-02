@@ -50,7 +50,7 @@ function increaseLikes(index) {
 
 btnSort.addEventListener('click', function() {
 
-    sortedMovies = movies.sort(function(a, b){
+    let sortedMovies = movies.sort(function(a, b){
         if (a.likes > b.likes) return -1;
         if (a.likes < b.likes) return 1;
     
