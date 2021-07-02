@@ -36,9 +36,9 @@ function renderList(movies){
     for (let i = 0; i < btnLike.length; i++) {
         btnLike[i].addEventListener("click", function () {
             increaseLikes(i);
-    })
+        })
     
-}
+    }
 
     function increaseLikes(index) {
         
@@ -46,7 +46,7 @@ function renderList(movies){
         
         document.getElementsByClassName('showlike')[index].innerText = movies[index].likes;
     }
-    
+
 }
 
 btnSort.addEventListener('click', function() {
