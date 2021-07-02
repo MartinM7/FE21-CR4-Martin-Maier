@@ -40,12 +40,13 @@ function renderList(movies){
     
 }
 
-function increaseLikes(index) {
+    function increaseLikes(index) {
+        
+        movies[index].likes = movies[index].likes +1;
+        
+        document.getElementsByClassName('showlike')[index].innerText = movies[index].likes;
+    }
     
-    movies[index].likes = movies[index].likes +1;
-    
-    document.getElementsByClassName('showlike')[index].innerText = movies[index].likes;
-}
 }
 
 btnSort.addEventListener('click', function() {
